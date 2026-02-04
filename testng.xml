@@ -1,0 +1,8 @@
+<!-- testng.xml (at the repo root, same level as pom.xml) -->
+<suite name="CucumberSuite">
+  <test name="CucumberTests">
+    <classes>
+      <class name="runners.Master_Runner"/>
+    </classes>
+  </test>
+</suite>
