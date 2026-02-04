@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+
+import java.nio.file.Paths;
 
 import java.time.Duration;
 
@@ -25,8 +28,22 @@ public class DriverFactory {
 
         switch (browser) {
             case "edge": {
-                // Assumes msedgedriver is on PATH or webdriver.edge.driver is set
-                driver = new EdgeDriver();
+
+                EdgeOptions options = new EdgeOptions();
+                    options.addArguments("--headless=new");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("--remote-debugging-port=0");
+                    options.addArguments("--window-size=1920,1080");
+
+                // Isolate profile to avoid locks in CI
+                String userDataDir = Paths.get(System.getProperty("java.io.tmpdir"), "edge-profile").toString();
+                options.addArguments("--user-data-dir=" + userDataDir);
+
+                // Do NOT set driver path; Selenium Manager (Selenium 4.6+) resolves msedgedriver
+                driver = new EdgeDriver(options);
+
                 break;
             }
             case "chrome": {
