@@ -26,8 +26,20 @@ public class DriverFactory {
         switch (browser) {
             case "edge": {
                 // Assumes msedgedriver is on PATH or webdriver.edge.driver is set
-                driver = new EdgeDriver();
-                break;
+                EdgeOptions options = new EdgeOptions();
+                
+                options.addArguments("--headless=new");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1080");
+        
+                // Helpful for CI stability
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--no-first-run");
+                options.addArguments("--no-default-browser-check");
+                options.addArguments("--disable-features=Translate,BackForwardCache");
+                options.addArguments("--log-level=2");
+
+                driver = new EdgeDriver(options);
             }
             case "chrome": {
                 ChromeOptions options = new ChromeOptions();
