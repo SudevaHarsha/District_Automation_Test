@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\2457176\AppData\Local\Temp\testng-eclipse-1282718925\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">26 methods,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Apply filters, open first show, and validate seat selection&quot;, &quot;Seat selection flow on District Movi...)">runScenario("Apply filters, open first show, and validate seat selection", "Seat selection flow on District Movi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;search&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "search"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;currentLocation&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "currentLocation"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Opening theatre details page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">runScenario("Opening theatre details page for "Avatar"", "Theatres list and filters for a selected movie")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">runScenario("Login validation with Excel driven data", "Authentication Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;searchError&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "searchError"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search flow for &quot;(bar visibility)&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("Search flow for "(bar visibility)"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Services &amp; amenities render properly on theatre page&quot;, &quot;Theatres list and filters for a selected mo...)">runScenario("Services & amenities render properly on theatre page", "Theatres list and filters for a selected mo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Showtimes update when date is changed for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movi...)">runScenario("Showtimes update when date is changed for "Avatar"", "Theatres list and filters for a selected movi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search flow for &quot;Avatar Fire and Ash&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">runScenario("Login validation with Excel driven data", "Authentication Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Cancellation policy is displayed for a theatre of &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selec...)">runScenario("Cancellation policy is displayed for a theatre of "Avatar"", "Theatres list and filters for a selec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;display&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "display"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate theatres are listed for &quot;Avatar&quot; in &quot;Chennai&quot;&quot;, &quot;Theatres list and filters for a selected ...)">runScenario("Validate theatres are listed for "Avatar" in "Chennai"", "Theatres list and filters for a selected ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search flow for &quot;Avuty&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("Search flow for "Avuty"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Language filter on showtimes page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">runScenario("Login validation with Excel driven data", "Authentication Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search flow for &quot;Avatar Fire and Ash&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search flow for &quot;A&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("Search flow for "A"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;popular&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "popular"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Show Time filter - Morning&quot;, &quot;Theatres list and filters for a selected movie&quot;)">runScenario("Show Time filter - Morning", "Theatres list and filters for a selected movie")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">runScenario("Login validation with Excel driven data", "Authentication Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">runScenario("Login validation with Excel driven data", "Authentication Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Language filter on showtimes page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Format filter - IMAX&quot;, &quot;Theatres list and filters for a selected movie&quot;)">runScenario("Format filter - IMAX", "Theatres list and filters for a selected movie")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.Master_Runner" class="method navigator-link" hash-for-method="runScenario(&quot;City selection via &quot;allCities&quot;&quot;, &quot;City selection and movie search&quot;)">runScenario("City selection via "allCities"", "City selection and movie search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.Master_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Apply filters, open first show, and validate seat selection&quot;, &quot;Seat selection flow on District Movi...)">
+                  </a> <!-- runScenario("Apply filters, open first show, and validate seat selection", "Seat selection flow on District Movi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Apply filters, open first show, and validate seat selection", "Seat selection flow on District Movies")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;search&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "search"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "search"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;currentLocation&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "currentLocation"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "currentLocation"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Opening theatre details page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">
+                  </a> <!-- runScenario("Opening theatre details page for "Avatar"", "Theatres list and filters for a selected movie") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Opening theatre details page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">
+                  </a> <!-- runScenario("Login validation with Excel driven data", "Authentication Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login validation with Excel driven data", "Authentication Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;searchError&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "searchError"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "searchError"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search flow for &quot;(bar visibility)&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("Search flow for "(bar visibility)"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search flow for "(bar visibility)"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Services &amp; amenities render properly on theatre page&quot;, &quot;Theatres list and filters for a selected mo...)">
+                  </a> <!-- runScenario("Services & amenities render properly on theatre page", "Theatres list and filters for a selected mo...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Services & amenities render properly on theatre page", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Showtimes update when date is changed for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movi...)">
+                  </a> <!-- runScenario("Showtimes update when date is changed for "Avatar"", "Theatres list and filters for a selected movi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Showtimes update when date is changed for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search flow for &quot;Avatar Fire and Ash&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">
+                  </a> <!-- runScenario("Login validation with Excel driven data", "Authentication Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login validation with Excel driven data", "Authentication Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Cancellation policy is displayed for a theatre of &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selec...)">
+                  </a> <!-- runScenario("Cancellation policy is displayed for a theatre of "Avatar"", "Theatres list and filters for a selec...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Cancellation policy is displayed for a theatre of "Avatar"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;display&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "display"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "display"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate theatres are listed for &quot;Avatar&quot; in &quot;Chennai&quot;&quot;, &quot;Theatres list and filters for a selected ...)">
+                  </a> <!-- runScenario("Validate theatres are listed for "Avatar" in "Chennai"", "Theatres list and filters for a selected ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate theatres are listed for "Avatar" in "Chennai"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search flow for &quot;Avuty&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("Search flow for "Avuty"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search flow for "Avuty"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Language filter on showtimes page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">
+                  </a> <!-- runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">
+                  </a> <!-- runScenario("Login validation with Excel driven data", "Authentication Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login validation with Excel driven data", "Authentication Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search flow for &quot;Avatar Fire and Ash&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search flow for &quot;A&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("Search flow for "A"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search flow for "A"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;popular&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "popular"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "popular"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Show Time filter - Morning&quot;, &quot;Theatres list and filters for a selected movie&quot;)">
+                  </a> <!-- runScenario("Show Time filter - Morning", "Theatres list and filters for a selected movie") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Show Time filter - Morning", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">
+                  </a> <!-- runScenario("Login validation with Excel driven data", "Authentication Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login validation with Excel driven data", "Authentication Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login validation with Excel driven data&quot;, &quot;Authentication Validation&quot;)">
+                  </a> <!-- runScenario("Login validation with Excel driven data", "Authentication Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login validation with Excel driven data", "Authentication Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Language filter on showtimes page for &quot;Avatar&quot;&quot;, &quot;Theatres list and filters for a selected movie&quot;)">
+                  </a> <!-- runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Format filter - IMAX&quot;, &quot;Theatres list and filters for a selected movie&quot;)">
+                  </a> <!-- runScenario("Format filter - IMAX", "Theatres list and filters for a selected movie") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Format filter - IMAX", "Theatres list and filters for a selected movie")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;City selection via &quot;allCities&quot;&quot;, &quot;City selection and movie search&quot;)">
+                  </a> <!-- runScenario("City selection via "allCities"", "City selection and movie search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("City selection via "allCities"", "City selection and movie search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2457176\AppData\Local\Temp\testng-eclipse-1282718925\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.Master_Runner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(26);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.Master_Runner')
+data.setCell(0, 3, 91779);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.Master_Runner')
+data.setCell(1, 3, 90546);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.Master_Runner')
+data.setCell(2, 3, 72085);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.Master_Runner')
+data.setCell(3, 3, 71550);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.Master_Runner')
+data.setCell(4, 3, 71251);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.Master_Runner')
+data.setCell(5, 3, 71244);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.Master_Runner')
+data.setCell(6, 3, 70541);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.Master_Runner')
+data.setCell(7, 3, 70497);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.Master_Runner')
+data.setCell(8, 3, 70050);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.Master_Runner')
+data.setCell(9, 3, 69663);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.Master_Runner')
+data.setCell(10, 3, 51993);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.Master_Runner')
+data.setCell(11, 3, 31800);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.Master_Runner')
+data.setCell(12, 3, 20079);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.Master_Runner')
+data.setCell(13, 3, 17503);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.Master_Runner')
+data.setCell(14, 3, 17073);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.Master_Runner')
+data.setCell(15, 3, 16953);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runners.Master_Runner')
+data.setCell(16, 3, 16262);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runners.Master_Runner')
+data.setCell(17, 3, 15379);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runners.Master_Runner')
+data.setCell(18, 3, 15314);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runners.Master_Runner')
+data.setCell(19, 3, 15222);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runners.Master_Runner')
+data.setCell(20, 3, 12752);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runners.Master_Runner')
+data.setCell(21, 3, 9996);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runners.Master_Runner')
+data.setCell(22, 3, 9582);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runners.Master_Runner')
+data.setCell(23, 3, 9076);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runners.Master_Runner')
+data.setCell(24, 3, 9070);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runners.Master_Runner')
+data.setCell(25, 3, 8613);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.Master_Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@615f61ec)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login validation with Excel driven data", "Authentication Validation")</span>
+                <span class="method-start">375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login validation with Excel driven data", "Authentication Validation")</span>
+                <span class="method-start">10376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login validation with Excel driven data", "Authentication Validation")</span>
+                <span class="method-start">19960 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login validation with Excel driven data", "Authentication Validation")</span>
+                <span class="method-start">28575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login validation with Excel driven data", "Authentication Validation")</span>
+                <span class="method-start">37649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "display"", "City selection and movie search")</span>
+                <span class="method-start">46727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "search"", "City selection and movie search")</span>
+                <span class="method-start">62108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "searchError"", "City selection and movie search")</span>
+                <span class="method-start">93908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "currentLocation"", "City selection and movie search")</span>
+                <span class="method-start">109223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "popular"", "City selection and movie search")</span>
+                <span class="method-start">126297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("City selection via "allCities"", "City selection and movie search")</span>
+                <span class="method-start">146377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search flow for "(bar visibility)"", "City selection and movie search")</span>
+                <span class="method-start">161600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search flow for "A"", "City selection and movie search")</span>
+                <span class="method-start">174354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</span>
+                <span class="method-start">191858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search flow for "Avuty"", "City selection and movie search")</span>
+                <span class="method-start">243853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search flow for "Avatar Fire and Ash"", "City selection and movie search")</span>
+                <span class="method-start">260116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate theatres are listed for "Avatar" in "Chennai"", "Theatres list and filters for a selected ...)</span>
+                <span class="method-start">277070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Opening theatre details page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                <span class="method-start">347121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Showtimes update when date is changed for "Avatar"", "Theatres list and filters for a selected movi...)</span>
+                <span class="method-start">417663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Cancellation policy is displayed for a theatre of "Avatar"", "Theatres list and filters for a selec...)</span>
+                <span class="method-start">488161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Services & amenities render properly on theatre page", "Theatres list and filters for a selected mo...)</span>
+                <span class="method-start">559414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                <span class="method-start">629078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Language filter on showtimes page for "Avatar"", "Theatres list and filters for a selected movie")</span>
+                <span class="method-start">719624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Show Time filter - Morning", "Theatres list and filters for a selected movie")</span>
+                <span class="method-start">811404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Format filter - IMAX", "Theatres list and filters for a selected movie")</span>
+                <span class="method-start">882650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Apply filters, open first show, and validate seat selection", "Seat selection flow on District Movi...)</span>
+                <span class="method-start">954201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1026288 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cucumber Suite]">
+  <test thread-count="5" name="All Cucumber Runners(failed)">
+    <classes>
+      <class name="runners.TS_02_Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.TS_02_Runner -->
+      <class name="runners.TS_03_Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.TS_03_Runner -->
+      <class name="runners.TS_04_Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.TS_04_Runner -->
+      <class name="runners.TS_01_Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.TS_01_Runner -->
+    </classes>
+  </test> <!-- All Cucumber Runners(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->
