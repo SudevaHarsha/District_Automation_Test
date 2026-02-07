@@ -31,6 +31,17 @@
             <version>4.39.0</version>
         </dependency>
 
+
+        <!-- Ensure Edge classes are available -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-edge-driver</artifactId>
+            <version>4.39.0</version>
+            <!-- Because your DriverFactory is under src/test/java, test scope is fine -->
+            <scope>test</scope>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
         <dependency>
             <groupId>org.apache.poi</groupId>
