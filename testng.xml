@@ -1,5 +1,5 @@
 <!-- testng.xml (at the repo root, same level as pom.xml) -->
-<suite name="CucumberSuite">
+<suite name="CucumberSuite" parallel="methods" thread-count="6">
   <test name="CucumberTests">
     <classes>
       <class name="runners.Master_Runner"/>
