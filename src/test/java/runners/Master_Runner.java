@@ -15,9 +15,5 @@ import io.cucumber.testng.*;
     monochrome = true
 )
 public class Master_Runner extends AbstractTestNGCucumberTests {
-    @Override
-    @DataProvider(parallel = true)
-    public Object[][] scenarios() {
-        return super.scenarios();
-    }
+    
 }
