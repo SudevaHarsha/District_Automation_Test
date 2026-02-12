@@ -15,5 +15,5 @@ import io.cucumber.testng.*;
     monochrome = true
 )
 public class Master_Runner extends AbstractTestNGCucumberTests {
-    
+
 }
